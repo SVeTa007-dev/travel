@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Главная</title>
+</head>
+<body >
+
+<header >
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sn">
+  <div class="container-fluid">
+              <!-- Just an image -->
+    <a class="navbar-brand" href="#">
+      <img src="https://static.vecteezy.com/system/resources/thumbnails/001/206/198/original/mountain-icon.png" alt="" width="30" height="24">
+    </a>
+    <a class="navbar-brand" href='{{ url_for("homepage")}}'>Поход мечты</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Открыть меню">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href='{{ url_for("homepage")}}'>Главная</a>
+        <a class="nav-link active" href='{{ url_for("about")}}'>Карта</a>
+        <a class="nav-link active" href='{{ url_for("review")}}'>Отправиться в поход</a>
+      </div>
+    </div>
+  </div>
+</nav>
+</header>
+<main class="container mt-4">
+    <h1>Путешествие к Имеретинским озёрам</h1>
+    <div class="row">
+        <div class="col-sm-6 col-lg-4">
+            <p>Большое Имеретинское озеро или озеро Безмолвия — самое крупное по площади озеро Кавказского заповедника. Оно лежит в огромном горном цирке на высоте 2 530 м и занимает площадь 190 000 м². Цифра эта мало что говорит сознанию, пока не увидишь само озеро: чтобы обойти его в неспешном темпе с остановками на фотографирование, потребуется целый час! Поход к Большому Имеретинскому озеру — один из самых красивых туристических маршрутов Кавказского заповедника, при этом он доступен без специальной подготовки и снаряжения и достаточно прост в ориентировании.Где располагаются Имеретинские озера, поклонники активного отдыха узнали относительно недавно. Это связано с тем, что долгое время объекты не изучали, так как путь к некоторым из них далекий и опасный. Впервые упоминание об этой местности сделал ученый Николай Динник. Географ пояснил, что название связано с народностью имеретины. Ее представители жили здесь и пасли овец на горных склонах.</p>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <p>«Высокий сезон» на озере начинается в августе, когда водная гладь окончательно освобождается от льда и снега. Но и сентябрь подходит для этого маршрута, если внимательно следить за прогнозом погоды и держаться ближе к первой половине месяца — в последней декаде сентября на этих высотах вероятны первые снегопады.На высоте 2 500 м ночью могут быть заморозки даже летом, а уж в сентябре тем более понадобится хороший трёхсезонный спальник и тёплая одежда. В холодную погоду лучше заночевать ниже, а к озеру подняться налегке.</p>
+        </div>
+        <div class="card" style="width: 19rem;">
+  <img src="https://tvil.ru/blog/sites/blog/files/image/articles/2018_07/Pohod-ryukzak23.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Незабываемое путешествие</h5>
+    <p class="card-text">Совсем скоро мы отправляемся в поход к Имеретинским озером. У тебя есть шанс отправиться с нами. Успей в команду!</p>
+    <a class="nav-link active" href='{{ url_for("review")}}'>забронировать место</a>
+  </div>
+</div>
+
+        <main class="container mt-5">
+            <h2>
+                Фотоотчёты предыдущих походов
+            </h2>
+              <style>
+   .thumb img  {
+    border: 2px solid #55c5e9; /* Рамка вокруг фотографии */
+    padding: 15px; /* Расстояние от картинки до рамки */
+    background: #666; /* Цвет фона */
+    margin-right: 10px; /* Отступ справа */
+    margin-bottom: 10px; /* Отступ снизу */
+   }
+  </style>
+ </head>
+ <body>
+  <p class="thumb">
+   <img src="https://cdn.fishki.net/upload/post/2017/02/15/2219522/9a85aa9bcb775ff40e382170b5b786b8.jpg" alt="Фотография 1" width="400" height="400">
+   <img src="https://img-fotki.yandex.ru/get/6312/46605854.b/0_76526_3eaf5a7c_XL" alt="Фотография 2" width="400" height="400">
+   <img src="https://pesh-lesh.com/wp-content/uploads/2019/03/Имеретинские-озера-3.jpg" alt="Фотография 3" width="400" height="400">
+   <img src="https://img-fotki.yandex.ru/get/898391/338276828.f2/0_20c134_de960c95_XXL.jpg" alt="Фотография 4" width="400" height="400">
+   <img src="https://smorodina.com/uploads/exhibition_image/image/25/DSC_0507.jpg" alt="Фотография 5" width="400" height="400">
+   <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Имеретинские_озёра_1.jpg" alt="Фотография 6" width="400" height="400">
+  </p>
+    </div>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+</body>
+</html>
